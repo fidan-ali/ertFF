@@ -1,5 +1,3 @@
-# src/factory.py
-
 from src.models import Student, Course, Quiz, Progress
 
 class EntityFactory:
