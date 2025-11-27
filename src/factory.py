@@ -5,10 +5,6 @@ class EntityFactory:
     
     @staticmethod
     def create_entity(entity_type, **kwargs):
-        """
-        Creates an instance of the requested entity type based on kwargs.
-        This handles object instantiation (GRASP Creator).
-        """
         if entity_type == 'Student':
             return Student(
                 student_id=kwargs.get('id'), 

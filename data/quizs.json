@@ -1,1 +1,20 @@
-[]
+[
+    {
+        "id": "bdebdc4b-9929-403d-96f0-998f61c870d3",
+        "course_id": "1",
+        "title": "1",
+        "max_score": 100
+    },
+    {
+        "id": "66622bdb-01e5-4107-9d6e-ee57673660ec",
+        "course_id": "1",
+        "title": "1",
+        "max_score": 1
+    },
+    {
+        "id": "d51ce42d-038e-43ab-9b4d-ddc96c2c7b58",
+        "course_id": "1",
+        "title": "1",
+        "max_score": 100
+    }
+]

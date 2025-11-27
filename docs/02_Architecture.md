@@ -13,6 +13,7 @@ test_repository.py
 (*.md files)
 main.py
 /data
+utils.py
 students.json
 courses.json
 quizzes.json
