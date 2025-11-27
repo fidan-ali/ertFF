@@ -31,7 +31,7 @@ Same method name → different behaviors.
 - **O (OCP):** new models can be added without rewriting existing ones  
 - **L (LSP):** all subclasses behave like BaseModel  
 - **I (ISP):** no class has unnecessary methods  
-- **D (DIP):** core logic depends on AbstractRepository  
+- **D (DIP):** The Controller relies on the Repository interface (high-level methods), decoupling it from the low-level data storage details.
 
 ## 6. GRASP Principles
 - Creator → Factory  

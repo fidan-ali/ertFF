@@ -2,18 +2,18 @@
 
 ## Folder Structure
 
-/project_root
+/erFF
 /src
 models.py
 factory.py
 repository.py
+utils.py
 /tests
-test_repository.py
+test_models.py
 /docs
 (*.md files)
 main.py
 /data
-utils.py
 students.json
 courses.json
 quizzes.json
@@ -27,11 +27,11 @@ progress.json
 - Requires no external database  
 - Human-readable data format  
 
-### 2. Repository Layer
-Implements the Dependency Inversion Principle:
+### 2. Repository Layer (Isolation and Persistence)
+This design implements the **Repository Pattern** to decouple the application from the data layer.
 
-- `AbstractRepository` defines the interface  
-- `JsonRepository` implements create/read persistence  
+ **JsonRepository:** This class handles all data persistence (reading/writing JSON files) and enforces 
+ **Decoupling:** Storage logic is isolated; the Controller (`main.py`) only interacts with the          repository's high-level methods, not the JSON files directly.
 
 ### 3. Factory Pattern
 Used to create entity objects dynamically.  

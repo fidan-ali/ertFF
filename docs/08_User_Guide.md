@@ -1,7 +1,9 @@
 # User Guide — Interactive CLI
 
 ## Running the Application
+```bash
 python main.py
+```
 
 ## Menu Options
 1. Add Student  
@@ -15,9 +17,11 @@ python main.py
 9. Exit  
 
 ## Data Storage
-Every action writes to:
+All actions write to JSON files in:
 
+```
 /data/*.json
+```
 
 ## Purpose
-Allows simple end-user interaction in Sprint 1.
+Allows simple end-user interaction for creating and viewing Students, Courses, Quizzes, and Progress records in Sprint 1.

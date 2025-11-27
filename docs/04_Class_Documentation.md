@@ -61,3 +61,13 @@ Handles:
 
 Purpose:  
 Provide persistence layer independent of core logic.
+
+## Utils (Helper Module)
+Methods:
+- input_non_empty
+- input_optional_id
+- input_number
+- input_alpha_spaces
+
+Purpose:
+Isolates all non-domain-specific helper functions, keeping core classes clean (High Cohesion).
