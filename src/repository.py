@@ -64,6 +64,16 @@ class JsonRepository:
         data = self._load_data()
         found = False
 
+        if "email" in new_data and self.entity_name == "Student":
+            for item in data:
+                if item["id"] != entity_id and item.get("email") == new_data["email"]:
+                    raise ValueError(f"Email '{new_data['email']}' already exists.")
+            
+        if "title" in new_data and self.entity_name == "Course":
+            for item in data:
+                if item["id"] != entity_id and item.get("title") == new_data["title"]:
+                    raise ValueError(f"Course title '{new_data['title']}' already exists.")    
+                
         for i, item in enumerate(data):
             if item["id"] == entity_id:
                 data[i].update(new_data)

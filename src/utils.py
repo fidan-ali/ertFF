@@ -8,12 +8,14 @@ def clear_screen():
     os.system("cls" if os.name == "nt" else "clear")
 
 def input_non_empty(prompt):
+    """Prompt until the user enters a non-empty string."""
     while True:
         value = input(prompt).strip()
         if value: return value
         print("❌ Input cannot be empty.")
 
 def input_optional_id(prompt):
+    """Prompt user for an ID; return None if left empty."""
     value = input(prompt).strip()
     return value if value else str(uuid.uuid4())
 
